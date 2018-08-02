@@ -12,7 +12,7 @@
     "react": "^16.4.1",
     "react-art": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz",
+    "react-native": "github:expo/react-native#sdk-29.0.0",
     "react-native-maps": "^0.21.0",
     "react-native-reanimated": "^1.0.0-alpha.5",
     "react-native-web": "^0.8.9",
