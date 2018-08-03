@@ -1,4 +1,25 @@
-/*only targets web app not mobile app*/
 #root {
+    /*only targets web app not mobile app*/
+}
 
+.back {
+    text-align: center;
+}
+
+.paperback {
+    color: red;
+    padding: 1em;
+}
+
+.name, .type {
+    padding: 0 1em 0 1em;
+}
+
+.number {
+    text-align: center;
+}
+
+.image {
+    align-self: center;
+    margin: 1em 0 1em 0;
 }

@@ -2,6 +2,11 @@ import React from 'react';
 import { View, Text, Image, Platform, Button, Share } from 'react-native';
 import { Link } from './routing';
 
+import './index.css';
+
+import Card from '@material-ui/core/Paper';
+import Paper from '@material-ui/core/Paper';
+
 const pokemon = props => {
     const { selectedPokemon } = props;
     // following code allows sharing on mobile device
@@ -13,7 +18,7 @@ const pokemon = props => {
     };
     const backButton = (
         <View>
-            <Link to="/">
+            <Link to="/" className='back'>
                 <Text>Go Back</Text>
             </Link>
         </View>
@@ -27,30 +32,30 @@ const pokemon = props => {
         );
     }
     return (
-        <View>
-            {backButton}
+        <Paper className='paperback'>
             <View>
-                <Text>{`#${selectedPokemon.number}`}</Text>
+                <Card className='number'>{`#${selectedPokemon.number}`}</Card>
             </View>
             <View>
-                <Text>{`Name: ${selectedPokemon.name}`}</Text>
+                <Card className='name'>{`Name: ${selectedPokemon.name}`}</Card>
             </View>
             <View>
-                <Text>{`Type: ${selectedPokemon.type}`}</Text>
+                <Card className='type'>{`Type: ${selectedPokemon.type}`}</Card>
             </View>
             <View>
-                <Image
+                <Image className='image'
                     style={{ width: 50, height: 50 }}
                     source={{ uri: selectedPokemon.photoUrl }}
                 />
             </View>
+            {backButton}
             {/*following code allows sharing on mobile device*/}
             {Platform.OS !== 'web' && (
                 <View>
                     <Button title="Share" onPress={handlePress} />
                 </View>
             )}
-        </View>
+        </Paper>
     );
 };
 
