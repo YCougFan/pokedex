@@ -2,6 +2,7 @@
     /*only targets web app not mobile app*/
 }
 
+/*Pokemon.js*/
 .back {
     text-align: center;
 }
@@ -9,6 +10,7 @@
 .paperback {
     color: red;
     padding: 1em;
+    font-size: 2em;
 }
 
 .name, .type {
@@ -22,4 +24,14 @@
 .image {
     align-self: center;
     margin: 1em 0 1em 0;
+    background-color: blue;
+}
+
+/*Home.js*/
+.display {
+    font-size: 2em;
+    color: rebeccapurple;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
 }

@@ -15,7 +15,7 @@ const Home = props => {
                 keyExtractor={Pokemon => Pokemon.number}
                 renderItem={({item}) =>
                     <TouchableOpacity onPress={() => handlePress(item)}>
-                        <Text>{item.name}</Text>
+                        <Text className="display">{item.name}</Text>
                     </TouchableOpacity>}
             />
         </View>

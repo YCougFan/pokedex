@@ -44,7 +44,7 @@ const pokemon = props => {
             </View>
             <View>
                 <Image className='image'
-                    style={{ width: 50, height: 50 }}
+                    style={{ width: 200, height: 200 }}
                     source={{ uri: selectedPokemon.photoUrl }}
                 />
             </View>
