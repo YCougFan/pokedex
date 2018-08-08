@@ -43,8 +43,17 @@ const pokemon = props => {
                 <Card className='type'>{`Type: ${selectedPokemon.type}`}</Card>
             </View>
             <View>
+                <Card className='category'>{`Category: ${selectedPokemon.category}`}</Card>
+            </View>
+            <View>
+                <Card className='abilities'>{`Abilities: ${selectedPokemon.abilities}`}</Card>
+            </View>
+            <View>
+                <Card className='weaknesses'>{`Weaknesses: ${selectedPokemon.weaknesses}`}</Card>
+            </View>
+            <View>
                 <Image className='image'
-                    style={{ width: 200, height: 200 }}
+                    style={{ width: 300, height: 300 }}
                     source={{ uri: selectedPokemon.photoUrl }}
                 />
             </View>

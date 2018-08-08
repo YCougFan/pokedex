@@ -13,12 +13,13 @@
     font-size: 2em;
 }
 
-.name, .type {
-    padding: 0 1em 0 1em;
+.name, .type, .number, .category, .abilities, .weaknesses {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-.number {
-    text-align: center;
+.weaknesses {
+    padding: 0 0.2em 0 0.2em;
 }
 
 .image {
